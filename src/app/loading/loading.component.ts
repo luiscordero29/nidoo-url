@@ -24,13 +24,13 @@ export class LoadingComponent implements OnInit {
     this.activatedRoute.queryParams.subscribe((params: Params) => {
       console.log(params);
       if (params['url']) {
-        if (ValdURL.isUri(params['url'])){
+        if (ValdURL.isUri(params['url'])) {
           this.link = params['url'];
           this.redirectUrl(this.link);
-        }else{
+        } else {
           this.redirectUrl(this.link);
         }
-      }else{
+      } else {
         this.redirectUrl(this.link);
       }
     });
