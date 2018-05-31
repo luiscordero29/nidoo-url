@@ -37,8 +37,8 @@ export class LoadingComponent implements OnInit {
   }
 
   redirectUrl(url) {
-    setTimeout(() => {
+    // setTimeout(() => {
       window.location.href = url;
-    }, 5000);
+    // }, 5000);
   }
 }
